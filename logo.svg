@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.976439mm"
+   height="18.189899mm"
+   viewBox="0 0 14.97644 18.189899"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/media/evgen/a7e6e375-0077-48d5-9a25-7a9b3519796d/GitHub/2020-Turkoniak-Bible/logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1"
+     inkscape:cx="-117"
+     inkscape:cy="-2.5"
+     inkscape:window-width="1366"
+     inkscape:window-height="695"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="14.976mm"
+     lock-margins="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="10.293,11.421339"
+       orientation="1,0"
+       id="guide3232" />
+    <sodipodi:guide
+       position="14.976436,2.964129"
+       orientation="0,-1"
+       id="guide3481" />
+    <sodipodi:guide
+       position="10.317068,10.857539"
+       orientation="0,-1"
+       id="guide3559" />
+    <sodipodi:guide
+       position="12.342914,12.054359"
+       orientation="0,-1"
+       id="guide3751" />
+    <sodipodi:guide
+       position="14.976436,15.329249"
+       orientation="0,-1"
+       id="guide4057" />
+    <sodipodi:guide
+       position="9.1759186,6.0491089"
+       orientation="1,0"
+       id="guide4135" />
+    <sodipodi:guide
+       position="9.1866966,18.189899"
+       orientation="0,-1"
+       id="guide4365" />
+    <sodipodi:guide
+       position="13.16249,11.554849"
+       orientation="1,0"
+       id="guide5425" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.167032,-148.89034)">
+    <path
+       style="fill:#ffcc00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 75.342956,154.99621 -2.864284,0.0307 v 1.19579 h 2.868486 l -0.0042,4.80843 c 0,0 -7.288558,0.39988 -9.175926,3.31092 0.0068,-6.45051 0.04255,-12.06769 0.04255,-12.06769 0,0 1.810338,-3.38402 9.133368,-3.38402 0,2.16393 0.02596,4.39932 6e-6,6.10587 z"
+       id="path869"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#ffcc00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 81.143471,151.75099 v 12.36512 h -13.3204 c 0,0 3.288018,-2.28925 8.636961,-2.16808 l 0.02407,-5.72533 h 2.845421 v -1.19682 h -2.869491 v -3.27489 z"
+       id="path2253"
+       sodipodi:nodetypes="cccccccccc" />
+    <path
+       style="fill:#ffcc00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 76.304835,165.15997 v 1.92027 c 0,0 -6.89039,-0.034 -8.320873,-1.96841 8.320873,0.0481 8.320873,0.0481 8.320873,0.0481 z"
+       id="path2255"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>

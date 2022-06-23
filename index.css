@@ -1,33 +1,111 @@
-/* * {
-  border: solid thin lightgreen;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* -----header------ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("bg.png");
+  color: gold;
+
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Serif', serif;
+}
+
+.logo {
+  height: 75px;
+  margin: 0 20px 0 30px;
 }
 
 h1 {
+  font-size: 100px;
+  margin: 0 15px 0 0;
+
   text-align: center;
+  text-transform: uppercase;
 }
 
-
 h2 {
-  text-align: center;
+  font-size: 22px;
+  width: 440px;
+}
+
+.pre {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;  
+  margin: 0 15px 0 0; 
+}
+
+.preIcon {
+  height: 50px;
+}
+
+.preText {
+  margin: 7px 0 0 0;
+
+  color: gold;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* ------Bible-text------ */
+
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testament {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .books {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 67%;
 }
 
-a {
+h3 {
+  margin: 12px auto 6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  margin: 7px;
+  color:dimgrey;
+}
+
+.bookLnk {
   margin:2px;
   padding: 5px;
   text-align: center;
+  height: 20px;
   
   text-decoration: none;
   color: black;
@@ -37,3 +115,40 @@ a {
   border-radius: 3px;
 }
 
+@media all and (orientation : portrait) {
+  
+  .logo {
+    height: 20px;
+    margin: 0 5px 0 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0 5px 0 0;
+  }
+  
+  h2 {
+    font-size: 8px;
+    width: 185px;
+  }
+  
+  .pre {
+    margin: 0 15px 0 0; 
+  }
+  
+  .preIcon {
+    height: 10px;
+  }
+  
+  .preText {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    display: none;
+  }
+
+
+
+}
