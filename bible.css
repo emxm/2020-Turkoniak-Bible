@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 body {
   font-family: 'Noto Serif', serif;
@@ -64,9 +63,7 @@ li:before {
 
 .YHWH {
   font-variant: small-caps;
-  font-size: 1.25em;
-  /* font-weight: bold; */
-  /* color: red; */
+  font-size: 1.15em;
 }
 
 .add {

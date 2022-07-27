@@ -22,6 +22,6 @@ li {
 }
 
 .YHWH {
-  font-weight: 700;
-  color:darkred;
+  font-variant: small-caps;
+  font-size: 1.15em;
 }
