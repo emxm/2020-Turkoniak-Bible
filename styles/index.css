@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----header------ */
+.header {
+  width: 100%;
+  height: 102px;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20275b;
+  background-image: url("../img/bg.png");
+}
+
+.logo {
+  height: 50px;
+  margin: 0 15px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+  color: gold;
+}
+.title__h1 {
+  text-transform: uppercase;
+  margin: 0 10px 0;
+  font-size: 75px;
+}
+.title__h2 {
+  margin: 0;
+  width: 275px;
+  font-size: 16px;
+}
+
+.pre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.pre__icon {
+  height: 33px;
+  margin-bottom: 5px;
+}
+.pre__text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: gold;
+  text-transform: uppercase;
+}
+.pre__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style-type: none;
+}
+.pre__listitem {
+  text-align: center;
+  background-color: #464675;
+  border-radius: 15px;
+  margin-bottom: 2px;
+  margin-right: 3px;
+  padding: 0 3px 3px;
+  transition: all 0.33s;
+}
+.pre__listitem:hover {
+  background: dimgrey;
+}
+.pre__link {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.33s;
+}
+.pre__link:hover {
+  color: gold;
+}
+.pre:hover .pre__list {
+  display: block;
+}
+
+/* ------Bible-text------ */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 5px;
+  width: 100%;
+  height: calc(100% - 102px);
+}
+@media all and (orientation: landscape) {
+  main {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.testament {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media all and (orientation: landscape) {
+  .testament {
+    width: 50%;
+  }
+}
+.testament__title {
+  font-size: 42px;
+  margin-bottom: 5px;
+  text-align: center;
+  margin: 10px 0 5px;
+  color: #20275b;
+  text-transform: uppercase;
+}
+@media all and (orientation: landscape) {
+  .testament__title {
+    font-size: 24px;
+  }
+}
+
+.bookGroup__title {
+  font-size: 32px;
+  margin: 0;
+  color: #3e3e3e;
+  margin: 7.5px 0 5px 15px;
+}
+@media all and (orientation: landscape) {
+  .bookGroup__title {
+    font-size: 18px;
+  }
+}
+
+.subGroup {
+  display: grid;
+  gap: 10px;
+}
+.subGroup--1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.subGroup--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.subGroup--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.subGroup--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.subGroup--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.subGroup--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+@media all and (orientation: landscape) {
+  .subGroup {
+    gap: 5px;
+  }
+}
+
+.bookLnk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 67px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  background: #464675;
+  border-radius: 33.5px;
+  font-size: 22px;
+  line-height: 0.9;
+  color: white;
+  transition: all 0.33s;
+}
+.bookLnk:hover {
+  background: #20275b;
+  color: Gold;
+}
+@media all and (orientation: landscape) {
+  .bookLnk {
+    font-size: 14px;
+    height: 36px;
+    border-radius: 16.75px;
+    margin-bottom: 7.5px;
+  }
+}/*# sourceMappingURL=index.css.map */

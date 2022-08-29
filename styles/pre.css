@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h2 {
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+}
+
+article {
+  font-family: 'Noto Serif', serif;
+  text-indent: 2%;
+
+  column-count: 2;
+  column-gap: 2%;
+}
+
+li {
+  font-family: 'Noto Serif', serif;
+}
+
+.right {
+  text-align: right;
+}
+
+.YHWH {
+  font-variant: small-caps;
+  font-size: 1.1em;
+}
+
+@media all and (orientation : portrait) {
+  article  {
+    column-count: 1;
+  }
+}

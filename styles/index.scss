@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@mixin forDesktop {
+  @media all and (orientation: landscape) {
+    @content;
+  }  
+}
+
+$header-height: 102px;
+$button-height: 67px;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+}
+
+/* -----header------ */
+
+.header {
+  width: 100%;
+  height: $header-height;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20275b;
+  background-image: url("../img/bg.png");
+}
+
+.logo {
+  height: 50px;
+  margin: 0 15px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Serif', serif;
+  color: gold;
+
+  &__h1 {
+    text-transform: uppercase;
+    margin: 0 10px 0;
+    font-size: 75px;
+  }
+
+  &__h2 {
+    margin: 0;
+    width: 275px;
+    font-size: 16px;
+  }
+}
+
+.pre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  &__icon {
+    height: 33px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: gold;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    width: max-content;
+    list-style-type: none;
+  }
+
+  &__listitem {
+    text-align: center;
+    background-color: #464675;;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    padding: 0 3px 3px;
+    transition: all 0.33s;
+    &:hover {
+      background: dimgrey;
+    }
+  }
+
+  &__link {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.33s;
+
+    &:hover {
+      color: gold;
+    }
+  }
+  &:hover &__list {
+    display: block;
+  }
+}
+
+/* ------Bible-text------ */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 5px;
+  width: 100%;
+  height: calc(100% - $header-height);
+
+  @include forDesktop {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.testament {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include forDesktop {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 42px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin: 10px 0 5px;
+    color: #20275b;
+    text-transform: uppercase;
+    @include forDesktop {
+      font-size: 24px;
+    }
+  }
+}
+
+.bookGroup {
+  &__title {
+    font-size: 32px;
+    margin: 0;
+    color: #3e3e3e;
+    margin: 7.5px 0 5px 15px;
+    @include forDesktop {
+      font-size: 18px;
+    }
+  }
+}
+
+.subGroup {
+  display: grid;
+  gap: 10px;
+  @for $i from 0 to 6 {
+    &--#{$i + 1} {
+      grid-template-columns: repeat(#{$i + 1}, 1fr);
+    }
+  }
+
+  @include forDesktop {
+    gap: 5px;
+  }
+}
+
+.bookLnk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  height: $button-height;
+
+  margin-bottom: 10px;
+  text-decoration: none;
+  background: #464675;
+  border-radius: $button-height / 2;
+
+  font-size: 22px;
+  line-height: 0.9;
+  color: white;
+
+  transition: all 0.33s;
+
+  &:hover {
+    background: #20275b;
+    color: Gold;
+  }
+
+  @include forDesktop {
+    font-size: 14px;
+    height: 36px;
+    border-radius: $button-height / 4;
+    margin-bottom: 7.5px;
+  }
+}
+

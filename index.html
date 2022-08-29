@@ -2,173 +2,183 @@
 <head>
   <meta charset="UTF-8">
   <title>Bible</title>
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
 
-  <header>
+  <header class="header">
     <div class="title">
-      <img src="logo.svg" alt="Сучасний переклад" class="logo">
-      <h1>Біблія</h1>
-      <h2>сучасною українською мовою в&nbsp;перекладі о.&nbsp;Рафаїла Турконяка 2020 року</h2>
+      <img class="logo" src="./img/logo.svg" alt="Сучасний переклад">
+      <h1 class="title__h1">Біблія</h1>
+      <div class="title__h2">
+        сучасною&nbsp;українською&nbsp;мовою
+        в&nbsp;перекладі&nbsp;о.&nbsp;Рафаїла&nbsp;Турконяка
+        2020 року
+      </div>
     </div>
 
-    <a class="pre" href="./00_pre.html">
-        <img src="pre.svg" alt="Передмова" class="preIcon">
-        <div class="preText">Передмова</div>
-    </a>
+    <div class="pre">
+      <img src="./img/pre.svg" alt="Передмова" class="pre__icon">
+      <div class="pre__text">Передмова</div>
+      <ul class="pre__list">
+        <li class="pre__listitem">
+          <a class="pre__link" href="./docs/00_pre.html">До друкованого видання</a>
+        </li>
+        <li class="pre__listitem">
+          <a class="pre__link" href="./docs/00_web.html">До цифрової версії</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main>
     <div class="testament">
-      <h3>Старий заповіт</h3>
+      <h3 class="testament__title">Старий заповіт</h3>
       <div class="bookGroup">
-        <h4>П'ятикнижжя:</h4>
+        <h4 class="bookGroup__title">П'ятикнижжя:</h4>
         <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./01_Gen.html">Буття</a>
-            <a class="bookLnk" href="./02_Ex.html">Вихід</a>
-            <a class="bookLnk" href="./03_Lev.html">Левіт</a>
-            <a class="bookLnk" href="./04_Num.html">Числа</a>
-            <a class="bookLnk" href="./05_Deut.html">Повторення Закону</a>
+          <div class="subGroup subGroup--5">
+            <a class= "bookLnk" href="./books/01_Gen.html">Буття</a>
+            <a class= "bookLnk" href="./books/02_Ex.html">Вихід</a>
+            <a class= "bookLnk" href="./books/03_Lev.html">Левіт</a>
+            <a class= "bookLnk" href="./books/04_Num.html">Числа</a>
+            <a class= "bookLnk" href="./books/05_Deut.html">Повторення Закону</a>
           </div>
         </div>
       </div>
       <div class="bookGroup">
-        <h4>Історичні книги:</h4>
+        <h4 class="bookGroup__title">Історичні книги:</h4>
         <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./06_Josh.html">Ісуса Навина</a>
-            <a class="bookLnk" href="./07_Judg.html">Суддів</a>
-            <a class="bookLnk" href="./08_Ruth.html">Рут</a>
+          <div class="subGroup subGroup--3">
+            <a class= "bookLnk" href="./books/06_Josh.html">Ісуса Навина</a>
+            <a class= "bookLnk" href="./books/07_Judg.html">Суддів</a>
+            <a class= "bookLnk" href="./books/08_Ruth.html">Рут</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./09_1Sam.html">1 Самуїла</a>
-            <a class="bookLnk" href="./10_2Sam.html">2 Самуїла</a>
-            <a class="bookLnk" href="./11_1Kin.html">1 Царів</a>
-            <a class="bookLnk" href="./12_2Kin.html">2 Царів</a>
+          <div class="subGroup subGroup--6">
+            <a class= "bookLnk" href="./books/09_1Sam.html">1 Самуїла</a>
+            <a class= "bookLnk" href="./books/10_2Sam.html">2 Самуїла</a>
+            <a class= "bookLnk" href="./books/11_1Kin.html">1 Царів</a>
+            <a class= "bookLnk" href="./books/12_2Kin.html">2 Царів</a>
+            <a class= "bookLnk" href="./books/13_1Chr.html">1 Хронік</a>
+            <a class= "bookLnk" href="./books/14_2Chr.html">2 Хронік</a>
+          </div>
+          <div class="subGroup subGroup--3">
+            <a class= "bookLnk" href="./books/15_Ezra.html">Ездри</a>
+            <a class= "bookLnk" href="./books/16_Neh.html">Неемії</a>
+            <a class= "bookLnk" href="./books/17_Esther.html">Естер</a>
+          </div>
+        </div>
+      </div>
+      <div class="bookGroup">
+        <h4 class="bookGroup__title">Поетичні книги:</h4>
+        <div class="books">
+          <div class="subGroup subGroup--5">
+            <a class= "bookLnk" href="./books/18_Job.html">Йова</a>
+            <a class= "bookLnk" href="./books/19_Ps.html">Псалми</a>
+            <a class= "bookLnk" href="./books/20_Prov.html">Прислів’я</a>
+            <a class= "bookLnk" href="./books/21_Eccl.html">Екклезіаста</a>
+            <a class= "bookLnk" href="./books/22_Song.html">Пісня над піснями</a>
+          </div>
+        </div>
+      </div>
+      <div class="bookGroup">
+        <h4 class="bookGroup__title">Пророчі книги:</h4>
+        <div class="books">
+          <div class="subGroup subGroup--5">
+            <a class= "bookLnk" href="./books/23_Is.html">Ісаї</a>
+            <a class= "bookLnk" href="./books/24_Jer.html">Єремії</a>
+            <a class= "bookLnk" href="./books/25_Lam.html">Плач Єремії</a>
+            <a class= "bookLnk" href="./books/26_Ezek.html">Єзекіїля</a>
+            <a class= "bookLnk" href="./books/27_Dan.html">Даниїла</a>
 
-            <a class="bookLnk" href="./13_1Chr.html">1 Хронік</a>
-            <a class="bookLnk" href="./14_2Chr.html">2 Хронік</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./15_Ezra.html">Ездри</a>
-            <a class="bookLnk" href="./16_Neh.html">Неемії</a>
-            <a class="bookLnk" href="./17_Esther.html">Естер</a>
+          <div class="subGroup subGroup--6">
+            <a class= "bookLnk" href="./books/28_Hos.html">Осії</a>
+            <a class= "bookLnk" href="./books/29_Joel.html">Йоіла</a>
+            <a class= "bookLnk" href="./books/30_Amos.html">Амоса</a>
+            <a class= "bookLnk" href="./books/31_Obad.html">Овдія</a>
+            <a class= "bookLnk" href="./books/32_Jonah.html">Йони</a>
+            <a class= "bookLnk" href="./books/33_Mic.html">Михея</a>
           </div>
-        </div>
-      </div>
-      <div class="bookGroup">
-        <h4>Поетичні книги:</h4>
-        <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./18_Job.html">Йова</a>
-            <a class="bookLnk" href="./19_Ps.html">Псалми</a>
-            <a class="bookLnk" href="./20_Prov.html">Прислів’я</a>
-            <a class="bookLnk" href="./21_Eccl.html">Екклезіаста</a>
-            <a class="bookLnk" href="./22_Song.html">Пісня над піснями</a>
-          </div>
-        </div>
-      </div>
-      <div class="bookGroup">
-        <h4>Пророчі книги:</h4>
-        <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./23_Is.html">Ісаї</a>
-            <a class="bookLnk" href="./24_Jer.html">Єремії</a>
-            <a class="bookLnk" href="./25_Lam.html">Плач Єремії</a>
-            <a class="bookLnk" href="./26_Ezek.html">Єзекіїля</a>
-            <a class="bookLnk" href="./27_Dan.html">Даниїла</a>
-
-          </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./28_Hos.html">Осії</a>
-            <a class="bookLnk" href="./29_Joel.html">Йоіла</a>
-            <a class="bookLnk" href="./30_Amos.html">Амоса</a>
-            <a class="bookLnk" href="./31_Obad.html">Овдія</a>
-            <a class="bookLnk" href="./32_Jonah.html">Йони</a>
-            <a class="bookLnk" href="./33_Mic.html">Михея</a>
-          </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./34_Nah.html">Наума</a>
-            <a class="bookLnk" href="./35_Hab.html">Авакума</a>
-            <a class="bookLnk" href="./36_Zeph.html">Софонії</a>
-            <a class="bookLnk" href="./37_Hag.html">Огія</a>
-            <a class="bookLnk" href="./38_Zech.html">Захарія</a>
-            <a class="bookLnk" href="./39_Mal.html">Малахії</a>
+          <div class="subGroup subGroup--6">
+            <a class= "bookLnk" href="./books/34_Nah.html">Наума</a>
+            <a class= "bookLnk" href="./books/35_Hab.html">Авакума</a>
+            <a class= "bookLnk" href="./books/36_Zeph.html">Софонії</a>
+            <a class= "bookLnk" href="./books/37_Hag.html">Огія</a>
+            <a class= "bookLnk" href="./books/38_Zech.html">Захарія</a>
+            <a class= "bookLnk" href="./books/39_Mal.html">Малахії</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="testament">
-      <h3>Новий заповіт</h3>
+      <h3 class="testament__title">Новий заповіт</h3>
       <div class="bookGroup">
-        <h4>Євангелія і Дії:</h4>
+        <h4 class="bookGroup__title">Євангелія і Дії:</h4>
         <div class="books">
-          <div class="subGroup">  
-            <a class="bookLnk" href="./40_Matt.html">Матвія</a>
-            <a class="bookLnk" href="./41_Mark.html">Марка</a>
-            <a class="bookLnk" href="./42_Luke.html">Луки</a>
-            <a class="bookLnk" href="./43_John.html">Івана</a>
+          <div class="subGroup subGroup--4">  
+            <a class= "bookLnk" href="./books/40_Matt.html">Матвія</a>
+            <a class= "bookLnk" href="./books/41_Mark.html">Марка</a>
+            <a class= "bookLnk" href="./books/42_Luke.html">Луки</a>
+            <a class= "bookLnk" href="./books/43_John.html">Івана</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./44_Acts.html">Дії апостолів</a>
+          <div class="subGroup subGroup--1">
+            <a class= "bookLnk" href="./books/44_Acts.html">Дії апостолів</a>
           </div>
         </div>
       </div>
       <div class="bookGroup">
-        <h4>Послання апостола Павла:</h4>  
+        <h4 class="bookGroup__title">Послання апостола Павла:</h4>  
         <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./45_Rom.html">Римлян</a>
-            <a class="bookLnk" href="./46_1Cor.html">1 Коринфян</a>
-            <a class="bookLnk" href="./47_2Cor.html">2 Коринфян</a>
-            <a class="bookLnk" href="./48_Gal.html">Галатів</a>
-            <a class="bookLnk" href="./49_Eph.html">Ефесян</a>
+          <div class="subGroup subGroup--5">
+            <a class= "bookLnk" href="./books/45_Rom.html">Римлян</a>
+            <a class= "bookLnk" href="./books/46_1Cor.html">1 Коринфян</a>
+            <a class= "bookLnk" href="./books/47_2Cor.html">2 Коринфян</a>
+            <a class= "bookLnk" href="./books/48_Gal.html">Галатів</a>
+            <a class= "bookLnk" href="./books/49_Eph.html">Ефесян</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./50_Phil.html">Філіппійців</a>
-            <a class="bookLnk" href="./51_Col.html">Колоссян</a>
-            <a class="bookLnk" href="./52_1Thess.html">1 Фессалонікійців</a>
-            <a class="bookLnk" href="./53_2Thess.html">2 Фессалонікійців</a>
+          <div class="subGroup subGroup--4">
+            <a class= "bookLnk" href="./books/50_Phil.html">Філіппійців</a>
+            <a class= "bookLnk" href="./books/51_Col.html">Колоссян</a>
+            <a class= "bookLnk" href="./books/52_1Thess.html">1 Фессалонікійців</a>
+            <a class= "bookLnk" href="./books/53_2Thess.html">2 Фессалонікійців</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./54_1Tim.html">1 Тимофія</a>
-            <a class="bookLnk" href="./55_2Tim.html">2 Тимофія</a>
-            <a class="bookLnk" href="./56_Titus.html">Тита</a>
-            <a class="bookLnk" href="./57_Philem.html">Филимона</a>
-            <a class="bookLnk" href="./58_Heb.html">Євреїв</a>
+          <div class="subGroup subGroup--5">
+            <a class= "bookLnk" href="./books/54_1Tim.html">1 Тимофія</a>
+            <a class= "bookLnk" href="./books/55_2Tim.html">2 Тимофія</a>
+            <a class= "bookLnk" href="./books/56_Titus.html">Тита</a>
+            <a class= "bookLnk" href="./books/57_Philem.html">Филимона</a>
+            <a class= "bookLnk" href="./books/58_Heb.html">Євреїв</a>
           </div>
         </div>
       </div>
       <div class="bookGroup">
-        <h4>Соборні послання:</h4>
+        <h4 class="bookGroup__title">Соборні послання:</h4>
         <div class="books">
-          <div class="subGroup">
-            <a class="bookLnk" href="./59_James.html">Якова</a>
-            <a class="bookLnk" href="./60_1Pet.html">1 Петра</a>
-            <a class="bookLnk" href="./61_2Pet.html">2 Петра</a>
+          <div class="subGroup subGroup--3">
+            <a class= "bookLnk" href="./books/59_James.html">Якова</a>
+            <a class= "bookLnk" href="./books/60_1Pet.html">1 Петра</a>
+            <a class= "bookLnk" href="./books/61_2Pet.html">2 Петра</a>
           </div>
-          <div class="subGroup">
-            <a class="bookLnk" href="./62_1John.html">1 Івана</a>
-            <a class="bookLnk" href="./63_2John.html">2 Івана</a>
-            <a class="bookLnk" href="./64_3John.html">3 Івана</a>
-            <a class="bookLnk" href="./65_Jude.html">Юди</a>
+          <div class="subGroup subGroup--4">
+            <a class= "bookLnk" href="./books/62_1John.html">1 Івана</a>
+            <a class= "bookLnk" href="./books/63_2John.html">2 Івана</a>
+            <a class= "bookLnk" href="./books/64_3John.html">3 Івана</a>
+            <a class= "bookLnk" href="./books/65_Jude.html">Юди</a>
           </div>
         </div>
       </div>
-      <div class="bookGroup">
-        <h4>Апокаліпсис:</h4>
+      <div class="bookGroup subGroup--1">
+        <h4 class="bookGroup__title">Апокаліпсис:</h4>
         <div class="books">
           <div class="subGroup">
-            <a class="bookLnk" href="./66_Rev.html">Об’явлення</a>
+            <a class= "bookLnk" href="./books/66_Rev.html">Об’явлення</a>
           </div> 
         </div>
       </div>
     </div>
   </main>
   
-
 </body>
 </html>
