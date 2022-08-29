@@ -68,7 +68,6 @@ li:before {
 
 .add {
   font-style: italic;
-  color: black;
 }
 
 @media all and (orientation : portrait) {

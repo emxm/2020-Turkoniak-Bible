@@ -26,6 +26,10 @@ li {
   font-size: 1.1em;
 }
 
+.add {
+  font-style: italic;
+}
+
 @media all and (orientation : portrait) {
   article  {
     column-count: 1;
